@@ -1,15 +1,15 @@
 var finalStr = '';
-for (let i =  1; i <=100; i++) {
-    if(i%4 === 0 && i%7 === 0) {
+for (let i =  1; i <=30; i++) {
+    if(i%4 === 0 && i%7 === 0) {                // it will check number which are divisible by 4 and 7.
         finalStr = finalStr.concat('marcopolo').concat(',');
         continue;
-    } else if(i%4===0) {
+    } else if(i%4===0) {                        // it will check number which are divisible by 4.
         finalStr = finalStr.concat('marco').concat(',');
         continue;
-    } else if(i%7 === 0) {
+    } else if(i%7 === 0) {                      // it will check number which are divisible by 7.
         finalStr = finalStr.concat('polo').concat(',');
         continue;
     }
     finalStr = finalStr.concat(i).concat(',');   
 }
-console.log(finalStr = finalStr.replace(/,\s*$/, " "));
+console.log(finalStr = finalStr.replace(/,\s*$/, " "));  // it will remove comma from last.
